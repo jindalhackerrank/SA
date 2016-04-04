@@ -1,0 +1,44 @@
+@import "vendor/less/bootstrap.less";
+@import "header";
+@import "cartItems";
+@import "invoice";
+
+
+.color-box{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 10px;
+   	cursor: pointer;
+   	&.selected{
+   		border: 2px solid green;
+   	}
+}
+
+.modal{
+	width: 80%;
+	margin: auto;
+	padding-top: 10%;
+}
+.prod-info{
+	text-align: center;
+	input{
+		width: 50px;
+		padding: 5px;
+	}
+	.space{
+		padding-bottom: 20px;
+	}
+	a{
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+		background: blue;
+		padding: 7px;
+		width: 150px;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2em;
+		cursor: pointer;
+	}
+}
