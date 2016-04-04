@@ -12,7 +12,9 @@ body{
 	margin: 0;
 	padding: 0;
 	width:100%;
+	overflow-x: hidden;
 }
+
 .color-box{
     height: 40px;
     width: 40px;
@@ -28,6 +30,17 @@ body{
 	width: 80%;
 	margin: auto;
 	padding-top: 10%;
+	.close{
+		font-size: 3em;
+		padding-top: 10px;
+		padding-right: 30px;
+		position: absolute;
+		right: 0;
+		top:0;
+		cursor: pointer;
+		color: black;
+		z-index: 1000;
+	}
 }
 .prod-info{
 	text-align: center;

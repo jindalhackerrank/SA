@@ -35,6 +35,9 @@ var Modal = React.createClass({
     cartAction.updateData(this.state);
     $(".modal").modal("hide");
   },
+  _closeModal:function(){
+    $(".modal").modal("hide");
+  },
   render: function () {      
     var size = [];
     var color = [];
@@ -46,6 +49,7 @@ var Modal = React.createClass({
       size.push((<option value={value.code}>{value.code}</option>));
       });
       comp = (<div className="modal-body row prod-info">
+              <span className="close" onClick={this._closeModal}>X</span>
               <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12 space">
                 <Img image={this.state.img} />
               </div>
